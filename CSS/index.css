@@ -1,35 +1,77 @@
-body {
-  height: 5000px;
-}
-.left {
-  width: 50%;
-  background-color: purple;
-}
-.right {
-  width: 50%;
-  background-color: green;
-}
-.relative {
-  background-color: lightblue;
-  height: 250px;
-  padding: 30px;
-  margin: 10px;
-  display: flex;
-  position: relative;
-}
-.absolute {
-  height: 50px;
-  width: 50px;
-  background-color: red;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.fixed {
-  height: 200px;
-  width: 200px;
-  background-color: green;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-}
+h1 { 
+  width: 2084px;
+    height: 267px;
+    flex-shrink: 0;
+    color: #000;
+  
+  text-align: center;
+  font-family: Inter;
+  font-size: 234px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+    margin-top: 20px;
+  }
+  h2 {
+    color: #000;
+  
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+   
+  }
+  h3 {
+    width: 224px;
+  height: 31px;
+  flex-shrink: 0;
+    color: #000;
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  
+  }
+  h4 { 
+  color: #000;
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;}
+  
+  .dev-menu {
+  width: 273px;
+  height: 45px;
+  flex-shrink: 0;
+  border-radius: 58px;
+  border: 4px solid #000;
+  }
+
+/* 
+Css can't live on its own. It needs an html title. 
+Works as declarations
+
+Writing CSS
+  h1 is "selector" So all h1 tags will be edited.
+  : is used instead to assign values
+  ; statement end. ends the style line.
+  is held within {}
+
+Attributes
+  class= is a naming convention 
+  you can call the convetion using .class-name
+  class="headline" call it using .headling {}
+
+Font-families
+Provide fall back fonts by applying multiple properties
+font-family: helvetica, arial, sans-serif;
+font-style: italic;
+font-size: pixel amount; Could change the padding and bounding box. Use margins to fix it.
+font-weight: bold, or 100-900
+
+outline: solid; useful for looking at sizing.
+*/
