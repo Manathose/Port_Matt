@@ -141,4 +141,41 @@ The box model
       position: absolute;
       Position: fixed; It is positioned on the viewport fo the browser and will always stay where  you put it even if the user scrolls down the page.
       Position: sticky; stays fixed until it hits the top of the viewport 
+
+      CSS flesbox Create elements that grow, shrink or fit together
+      display: flex; Use it on the parent element. So a section or div that becomes a flex box container that controls the children.
+      flex-direction: row or column; dispalys as column or row. 
+
+      Even spreading etc.
+        These go into the children containers.
+        Fills any available empty space. When there are two available units you split the remaining space so on and so forth.
+        Flex-grow: 1; Fill space horizontally 
+        Flex-grow 2; 
+
+        Child 1 gets 1 flex box and child 2 gets to 2 flex box elements. So 1/3 and 2/3 of the available space left. (
+        (Super confusing)
+
+
+        align-items: aligns in container top and bottom
+            flex-start; Beginning of the container (top)
+            flex-end; Bottom of the container (bottom)
+            center; middle of container
+            baseline; text align 
+            stretch; Fills whole space but only top and bottom
+
+        Justify-content: content across the left and right 
+            flex-start; default
+            flex-end; end of container
+            center; center of container
+            space-between; evenly distributed in the line first item is beginning and last item is end.
+            space-around; Equal space around them so equal margin
+            space-evenly; space-between but includes the left and right margin.
+
+            You can nest flex-boxes lmao
+            Keep a pen and paper handy so you can draw parent child relationships
+            Flexbox only affect direct children
+
+            parents are references for the flex boxes property.
+
+            So some affect only children but are placed in the parent and others are put in the children and only affect them.
     */
