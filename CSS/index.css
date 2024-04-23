@@ -13,25 +13,37 @@ h1 {
     margin-top: 20px;
   }
   .dev-menu {
+      padding: 10px 20px;
       display: inline-block;
-      padding: 10px 50px;
       border: 2px solid #EFD1C3;
       border-radius: 50px;
       background-color: var(--primary-color);
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 0 30px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      transform-origin: 50% 0;
+      /*display: flex;*/
+      margin-left: auto;
+      margin-right:auto;
+      /* flex-wrap: wrap; */
+      /* align-items: center; */
+      gap: 0 10px;
+     /* position: relative; */
+      justify-content: center; 
+      transform-origin: 50% 0%;
       height: auto;
       transform: translateY(0);
       transition: 0.4s ease transform;
       list-style-type: none;
-  }
+      width: fit-content;
+      position: fixed;
+      position: center;
 
+  }
+.solve {
+display: flex;
+justify-content: center;
+}
+
+li { 
+  display: inline-block;
+}
   
     .smallbold {
       color: #000;
@@ -42,6 +54,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin: 0 auto;
     }
   h2 {
   color: #000;
@@ -72,7 +85,10 @@ h1 {
   font-weight: 700;
   line-height: normal;}
   
- 
+ .paddingtest{
+  padding-left: 25%;
+  padding-right: 25%;
+ }
 
 /* 
 Css can't live on its own. It needs an html title. 
@@ -105,4 +121,24 @@ The box model
     padding: space around content, define its properties by setting its spacing attributes
     border: a border encloses the padding and content
     margin: the empty space around the border it is transparent.
-*/
+
+     Position elements
+     Float property { places it on the left or right side of the container wrapping text around it.}
+     Display: block; 
+     display: inline;
+     display: none;
+     display: inline-block the element itself is formatted as an inline element but you can apply  height and width
+
+    Block elements stack, inline elemetns next to eachother, html/css inline-block element sline up next to each other like inline elemnts You can give inline-block elements height and widths.
+
+    Using Relative Unites
+      CSS width Based Percentages using relative units
+
+
+      Position: static;
+      respects the flow of the content and scrolls with it. 
+      position: relative or rop. left, right, and bottom: Sets a box or thing as a reference poitn so Absolute knows where to go. For exmaple go 30 steps left of Mcdonalds. You now know where to start an where to go.
+      position: absolute;
+      Position: fixed; It is positioned on the viewport fo the browser and will always stay where  you put it even if the user scrolls down the page.
+      Position: sticky; stays fixed until it hits the top of the viewport 
+    */
