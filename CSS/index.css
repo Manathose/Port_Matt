@@ -179,3 +179,72 @@ The box model
 
             So some affect only children but are placed in the parent and others are put in the children and only affect them.
     */
+
+
+    /* Grids
+
+        used to build 2 dimensional layouts
+        display: grid;
+        You need a grid container just like flex box
+        grid-template-columns: 25% 255 25% 25%
+        grid-template-rows: 50% 50%
+
+        Fraction Units (fr)
+        specify the space taken up by each row/column. Fraction units calculate the space it takes up
+ 
+
+        .container {
+            display: grid; 
+            grid-template-columns: 50% 50% (two columns)
+            grid-template-rows: 50% 50% (two rows)
+            grid-template-areas: 
+              "topRow topRow topRow"
+              "leftSidebar rightContent rightContent" (Name every every cell! Which is the tic tac toe box that gets formed.  )
+        }
+
+        Grid template area, Determines the grid-area::after
+        Give everything a class or ID. and Everythign needs to be targeted. 
+        
+        Grid areas name can be anything you want
+        grid-area: topRow;
+        grid-area: leftSidebar;
+        gird-area: rightContent;
+
+        GRID POSITIONING - moves the whole grid??
+        CSS Grid position move stuff left to right unless flipped
+        justify-content: 
+        start;
+        end;
+        center;
+        stretch;
+        space-around;
+        space-between;
+        space-evenly;
+
+
+        align-content: move stuff top to bottom unless flipped
+        start;
+        end;
+        center;
+        stretch;
+        space-around;
+        space-between;
+        space-evenly;
+
+        Nesting grids:
+          works like flex box
+          Just put a grid into grid.
+
+
+          Media Queries: define how CSS styles are applied in relation to the characteristics of the device viewport.
+          Viewport: refers to browser that shares the content
+          @media - determines that it is a media query
+          @media - only screen (you can also use all, print, screen, and speech.)
+          {} - hodls the css
+          so it looks like this
+          @media only screen and (max-width: 600px) {
+            body{
+              background-color: lightblue
+            }
+          }
+    */
