@@ -1,0 +1,212 @@
+.dev-menu {
+    padding: 10px 20px;
+    grid-area: who;
+    border: 2px solid #966F26;
+    border-radius: 50px;
+
+    transform-origin: 50% 0%;
+    height: auto;
+    transform: translateY(0);
+    transition: 0.4s ease transform;
+    list-style-type: none;
+    width: max-content;
+    display: flex;
+    margin: 10px 0;
+    justify-content: space-between;
+      
+}
+.listi{
+  margin:0 5px;
+}
+
+.navbar{
+display: grid;
+grid-template-columns: 70px 1fr 70px;
+grid-template-rows: 1fr;
+grid-template-areas: "circle nav moon "
+"who who who";
+  color: var(--color-brand-ocean, #0339A6);
+text-align: center;
+font-family: Rukou;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+justify-content: center;
+
+}
+.icon{
+  grid-area: circle;
+
+}
+.nav{
+    grid-area: nav;
+}
+.moon{
+    grid-area: moon;
+}
+.dev-menu2{
+  grid-area: who;
+  display: flex;
+  justify-content: center;
+}
+.headerHuge h1{
+  color: var(--color-brand-midnight-sea, #011640);
+text-align: left;
+font-family: Rukou;
+font-size: 234px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+margin-top: 0px;
+margin-bottom: 0px
+}
+
+.contentGrid{
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "left right"
+  ;
+  width: auto;
+  
+}
+.smallTitle{
+  color: var(--color-brand-ocean, #0339A6);
+font-family: Rukou;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+grid-area: right;
+}
+.highlightText{
+  grid-area: right;
+  color: var(--color-brand-midnight-sea, #011640);
+font-family: "Richmond Text";
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-top: 30px;
+}
+/*.mainGrid{
+  display: grid;
+  grid-column-gap: 2rem;
+  grid-template-columns: repeat(6, minmax(0, 1fr)); */
+
+.placeholder{
+ background-color: black;
+ shape-outside: circle(50%);
+ clip-path: circle(9rem at center center);
+  border: solid;
+  grid-area: left;
+}
+
+.footercontainer {
+  display: grid;
+  grid-template-columns:none ;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "lt" 
+  "info" 
+  "bottombox";
+
+}
+.info {
+  grid-area: info;
+  display: grid;
+  grid-template-columns: 1fr 1fr 5fr;
+  grid-template-areas: "name email resume";
+  align-items: end;
+}
+
+.name { 
+  color: var(--color-brand-ocean, #0339A6);
+font-family: Rukou;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+grid-area: name;
+}
+.email{
+  color: var(--color-brand-ocean, #0339A6);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  grid-area: email;
+}
+.resume{
+  color: var(--color-brand-ocean, #0339A6);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  text-align: end;
+  height: max-content;
+  
+}
+
+  
+
+
+.lt{
+  background-color: #0339A6;
+  color: var(--color-brand-Salt, #FFF);
+  text-align: left;
+  font-family: Rukou;
+  font-size: 176px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-left: 30px;
+  border: solid 10px #966F26;
+}
+.bottombox{
+  grid-area: bottombox;
+  color: var(--color-brand-ocean, #0339A6);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  height: max-content;
+  list-style-type: none;
+  width: max-content;
+  display: flex;
+  margin: 10px 0;
+  justify-content: start;
+  outline: solid black;
+  margin: 0px;
+  
+}
+.portfolioversion{
+  grid-area: bottombox;
+  color: var(--color-brand-ocean, #0339A6);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  height: max-content;
+  text-transform: uppercase;
+  text-align: end;
+  
+}
+
+.outline{
+  outline: solid red;
+
+}
+
