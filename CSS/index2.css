@@ -1,18 +1,22 @@
  .dev-menu {
       padding: 10px 20px;
       grid-area: who;
-      border: 2px solid #EFD1C3;
+      border: 2px solid #966F26;
       border-radius: 50px;
-      background-color: var(--primary-color); 
-      gap: 0 10px;
-      justify-content: center; 
+
       transform-origin: 50% 0%;
       height: auto;
       transform: translateY(0);
       transition: 0.4s ease transform;
       list-style-type: none;
-      width: fit-content;
-
+      width: max-content;
+      display: flex;
+      margin: 10px 0;
+      justify-content: space-between;
+        
+  }
+  .listi{
+    margin:0 5px;
   }
 
 .navbar{
@@ -28,11 +32,11 @@ font-size: 20px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
+justify-content: end;
+
 }
 .icon{
     grid-area: circle;
-    justify-content: center;
-    align-items: center;
  
 }
 .topNav {
@@ -41,10 +45,11 @@ line-height: normal;
 .dev-menu{
     grid-area: who;
     justify-content: center;
+    text-align: center;
 }
 .headerHuge h1{
     color: var(--color-brand-midnight-sea, #011640);
-text-align: center;
+text-align: left;
 font-family: Rukou;
 font-size: 234px;
 font-style: normal;
@@ -84,6 +89,10 @@ font-weight: 700;
 line-height: normal;
 margin-top: 30px;
 }
+/*.mainGrid{
+    display: grid;
+    grid-column-gap: 2rem;
+    grid-template-columns: repeat(6, minmax(0, 1fr)); */
 
 .placeholder{
    background-color: black;
@@ -107,7 +116,9 @@ margin-top: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr 5fr;
     grid-template-areas: "name email resume";
+    align-items: end;
 }
+
 .name { 
     color: var(--color-brand-ocean, #0339A6);
 font-family: Rukou;
@@ -136,14 +147,13 @@ grid-area: name;
     font-weight: 500;
     line-height: normal;
     text-transform: uppercase;
-    grid-area: resume;
-    justify-content: end;
+    text-align: end;
+    height: max-content;
     
 }
-.resumeTest{
-    justify-content: end;
-    width: fit-content;
-}
+
+    
+
 
 .lt{
     background-color: #0339A6;
@@ -160,7 +170,40 @@ grid-area: name;
 }
 .bottombox{
     grid-area: bottombox;
+    color: var(--color-brand-ocean, #0339A6);
+    font-family: Rukou;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    height: max-content;
+    list-style-type: none;
+    width: max-content;
+    display: flex;
+    margin: 10px 0;
+    justify-content: start;
+    outline: solid black;
+    margin: 0px;
+    
 }
 .portfolioversion{
     grid-area: bottombox;
+    color: var(--color-brand-ocean, #0339A6);
+    font-family: Rukou;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    height: max-content;
+    text-transform: uppercase;
+    text-align: end;
+    
 }
+
+.outline{
+    outline: solid red;
+
+}
+
