@@ -4,7 +4,6 @@ h1 {
     flex-shrink: 0;
     color: #000;
   
-  text-align: center;
   font-family: Inter;
   font-size: 234px;
   font-style: normal;
@@ -12,34 +11,7 @@ h1 {
   line-height: normal;
     margin-top: 20px;
   }
-  .dev-menu {
-      padding: 10px 20px;
-      display: inline-block;
-      border: 2px solid #EFD1C3;
-      border-radius: 50px;
-      background-color: var(--primary-color);
-      /*display: flex;*/
-      margin-left: auto;
-      margin-right:auto;
-      /* flex-wrap: wrap; */
-      /* align-items: center; */
-      gap: 0 10px;
-     /* position: relative; */
-      justify-content: center; 
-      transform-origin: 50% 0%;
-      height: auto;
-      transform: translateY(0);
-      transition: 0.4s ease transform;
-      list-style-type: none;
-      width: fit-content;
-      position: fixed;
-      position: center;
-
-  }
-.solve {
-display: flex;
-justify-content: center;
-}
+ 
 
 li { 
   display: inline-block;
@@ -88,7 +60,30 @@ li {
  .paddingtest{
   padding-left: 25%;
   padding-right: 25%;
- }
+ } 
+.lt {
+  color: var(--color-brand-Salt, #FFF);
+justify-content: center;
+font-family: Rukou;
+font-size: 176px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+
+}
+.footercontainer {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr;
+grid-template-areas: "text";
+height: 263 px;
+width: 95%;
+flex-shrink: 0;
+background-color: #0339A6;
+border: 10px solid #966f26;
+
+}
 
 /* 
 Css can't live on its own. It needs an html title. 
@@ -247,4 +242,29 @@ The box model
               background-color: lightblue
             }
           }
+
+          2D transfomers
+          transform: rotate(); scale(); translate
+
+          CSS transitions
+          .example{ 
+            transition: all 0.5s ease-out;
+          }
+              property | Duration | motion ease in and out
+
+          Pseudo-class
+          a keyword that is added to any CSS selector that defines a special state of the element
+          .example:hover
+
+          .button{
+           width: 100px;
+           height 50px;
+            background-color: red;
+            transition: background-color .5s ease; this is what is trageted with :hover
+          }
+         .button:hover {
+          background-color: blue;
+
+          Keyframes:
+          simple vs complex css animations
     */
