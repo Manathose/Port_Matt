@@ -119,6 +119,131 @@
        inline elements: only occupy the space bounded by the tags defining the element, instead of breaking the flow of the content
        <button> <input> <lable> <img> <textarea> <span> 
         inline elements can not be given a height or width.
-      -->
+      
+      
+      
+      J query fundamentals
+    Javascript as well
+        
+        javascript basics
+
+        DOM javaScript was written to manipulate the Document Object Model(DOM) - Basically your html
+        Javascript varaibles - containers for storing data values. These allow the code to remember information for later. 
+            Variables can store numbers, text and even html elements
+
+            Syntax: var name = 'Snow White';
+                    declaration name (operator) 'value';
+                    So if you all the name variable it will bring up the string Snow White
+
+                    whole numbers are integers and decimal numbers are flaots.
+
+                    Boolean store a state: either ture or false: Binary/ on or off/ one or the other.
+
+                    Operators relate two or more values. = + 
+
+            
+            JavaScript funcitons
+              A function is a bundle of statements designed to perform a particular task. Breaking scripts into functions allow sus to organize and reuse our code.
+
+              Functions syntax - console.log is used for debuggin or learning.
+              console.log("hellow World!");
+
+              function myFunction() {}
+                example:
+                  function myFunction(number){
+                    number += 1;
+                    console.log(number);
+                  }
+                  myFunction(5);
+
+                  jQuery Basics it is shortened java script
+                  jQuery is a whole library of funcitons, designed specifically to simplify common front end development tasks.
+
+                  reference jQurey using <head><script src="jquery-3.7.1.min.js"></script></head>\
+                  use the $ function to find an html element
+                  Example: $('#button').on('click', function() {
+                      $('#light').toggle()
+                  })
+
+                  "use jquery on the html id button on the click of the element do the function"
+
+                  event listener is a function that waits fora  trigger or a specific event to occur before doing something
+
+                  <div class='button'> button </div>
+                  $('.button').on('click', function(){
+                    console.log("hey a click occured!");
+                  });
+                 Click is the listener
+
+                  more javascript
+                  conditional javascript
+
+                  CONDITIONAL LOGIC - determine an output based on one or more inputs
+                  
+                  Boleans are true or false conditions
+                  Syntax for if functions: if(stillOnRoute) {
+                    continue()
+                  } else{
+                    reroute();
+                  }
+
+                  if(true) {
+                    console.log("A");
+                  }
+                  if (false) {
+                    console.log("B");
+                  }
+
+                  runs A on the console
+
+                  if (false){
+                    console.log("A");
+                  } else {
+                    console.log("B");
+                  }
+
+                  if else syntax: using variables:
+
+                  var myBoolean= false;
+
+                  if(myBoolean){
+                    console.lgo('a');
+                  } else {
+                    console.log("b");
+                  }
+                
+                  comparison operators:
+
+                  A==B / a>b / a<b / a>= B / A<=B
+                  
+
+                    var myNumber = 5;
+                    if (myNumber> 10) {
+                      console.log("a");
+                    } else{
+                      console.log('b');
+                    }
+
+                    if (myNumber > 10) {
+                      console.log ('a");
+                    } else if (myNumber == 5) {
+                      console.log('b');
+                    } else {
+                      console.log("c");
+                    }
+                    runs b since myNumber = 5
+
+                    Something Unique about jquery
+                    it fails gracefully; like if I used the wrong code. it is only going to give you an error if something is explicitly wrong
+                    If something doesn't run it doesn't consider it an error.
+                    
+
+                    Logical Operators
+                    a && B = a is true and B is true
+                    A||B A is true or B is true
+                    !A A is false
+
+                    
+  -->
 
 
