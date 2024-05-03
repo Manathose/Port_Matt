@@ -1,18 +1,18 @@
 .dev-menu {
     padding: 10px 20px;
     grid-area: who;
-    border: 2px solid #966F26;
+    border: 5px solid #966F26;
     border-radius: 50px;
-
     transform-origin: 50% 0%;
     height: auto;
-    transform: translateY(0);
-    transition: 0.4s ease transform;
     list-style-type: none;
     width: max-content;
     display: flex;
     margin: 10px 0;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+  align-self: start;
       
 }
 .listi{
@@ -46,13 +46,23 @@ justify-content: center;
     grid-area: moon;
 }
 .dev-menu2{
-  grid-area: who;
   display: flex;
   justify-content: center;
+  z-index: 1;
+  overflow-x: hidden;
+  position: sticky;
+  top: 0;
+color: var(--color-brand-ocean, #0339A6);
+text-align: center;
+font-family: Rukou;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
 }
 .headerHuge h1{
   color: var(--color-brand-midnight-sea, #011640);
-text-align: left;
+text-align: justify;
 font-family: Rukou;
 font-size: 234px;
 font-style: normal;
@@ -60,7 +70,8 @@ font-weight: 500;
 line-height: normal;
 text-transform: uppercase;
 margin-top: 0px;
-margin-bottom: 0px
+margin-bottom: 0px;
+text-justify: inter-word;
 }
 
 .contentGrid{
@@ -108,7 +119,7 @@ margin-top: 30px;
 .footercontainer {
   display: grid;
   grid-template-columns:none ;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 100px 50px;
   grid-template-areas: "lt" 
   "info" 
   "bottombox";
@@ -119,7 +130,8 @@ margin-top: 30px;
   display: grid;
   grid-template-columns: 1fr 1fr 5fr;
   grid-template-areas: "name email resume";
-  align-items: end;
+  align-items: center;
+  
 }
 
 .name { 
@@ -131,6 +143,7 @@ font-weight: 500;
 line-height: normal;
 text-transform: uppercase;
 grid-area: name;
+padding: 0px 40px;
 }
 .email{
   color: var(--color-brand-ocean, #0339A6);
@@ -152,6 +165,7 @@ grid-area: name;
   text-transform: uppercase;
   text-align: end;
   height: max-content;
+  padding: 0px 40px;
   
 }
 
@@ -182,12 +196,13 @@ grid-area: name;
   text-transform: uppercase;
   height: max-content;
   list-style-type: none;
-  width: max-content;
+  width: 500px;
   display: flex;
+  gap: 5px;
   margin: 10px 0;
-  justify-content: start;
-  outline: solid black;
-  margin: 0px;
+ 
+
+  padding-left:  0px;
   
 }
 .portfolioversion{
@@ -198,15 +213,133 @@ grid-area: name;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  text-transform: uppercase;
+  text-transform: none;
   height: max-content;
-  text-transform: uppercase;
   text-align: end;
   
 }
 
 .outline{
-  outline: solid red;
+display: flex;
+justify-content: space-between;
+align-items:center;
+outline: solid black 4px;
+padding: 0px 40px;
 
 }
 
+body{
+  padding: 0 40px;
+  margin-top: 50px;
+}
+
+.projectLinkContainer{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 175px;
+  height: 84px;
+  color: var(--color-brand-ocean, #0339A6);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border-top: 3px solid var(--color-brand-dulled-gold, #966F26);
+border-bottom: 3px solid var(--color-brand-dulled-gold, #966F26);
+}
+
+.portfolio-items{
+  margin-top: 5%;
+}
+
+
+.projectLinkContainer p{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.projectLinkContainer .circle-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.projectLinkContainer3{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 175px;
+  height: 84px;
+  color: var(--color-brand-ocean, #0339A6);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+  border-top: 5px solid var(--color-brand-dulled-gold, #966F26);
+border-bottom: 8px solid var(--color-brand-dulled-gold, #966F26);
+}
+.projectLinkContainer3 p{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.projectLinkContainer3 .circle-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.designProcessContainer{
+  display: flex;
+  justify-content: space-between;
+}
+
+.skillsContainer ul{
+  list-style-type: none;
+  box-shadow: 4px 0px 0 #000 inset;
+  padding: 0px 20px;
+  color: #000;
+font-family: Rukou;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-transform: uppercase;
+margin: 0px;
+}
+
+.skillsContainer .first{
+  color: #000;
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: none;
+
+}
+
+.designProcessContainer .title{
+  color: var(--color-brand-midnight-sea, #011640);
+  font-family: Rukou;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.designProcessContainer p{
+  color: var(--color-brand-midnight-sea, #011640);
+font-family: Rukou;
+font-size: 128px;
+font-style: normal;
+font-weight: 500;
+line-height: 124px;
+text-transform: uppercase;
+margin: 0;
+}
+
+.designProcessContainer {
+  margin-top: 20px;
+}
